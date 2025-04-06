@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mon Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <a href="index.htm" class="logo">Mon Portfolio</a>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">À propos</a>
+                <a href="#projects" class="nav-link">Projets</a>
+                <a href="#cv" class="nav-link">CV</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="mobile-menu-btn">☰</button>
+        </nav>
+    </header>
+
+    <div class="mobile-menu">
+        <button class="mobile-menu-close">✕</button>
+        <div class="mobile-menu-links">
+            <a href="#about" class="mobile-menu-link">À propos</a>
+            <a href="#projects" class="mobile-menu-link">Projets</a>
+            <a href="#cv" class="mobile-menu-link">CV</a>
+            <a href="#contact" class="mobile-menu-link">Contact</a>
+        </div>
+    </div>
+    <div class="backdrop"></div>
+
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-shape shape-1"></div>
+            <div class="hero-shape shape-2"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Bonjour, je suis <span style="color: var(--primary);">Herman Kouogang KOUAM</span></h1>
+            <p class="hero-subtitle">Etudiant en Bachelor Cycle Web et multimedia</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">Voir Mes Projets</a>
+                <a href="#contact" class="btn btn-outline">Me Contacter</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">À Propos de Moi</h2>
+            <div class="about-content">
+                <div class="about-image animate-fadeInUp">
+                    <img src="photo-profil.jpg" alt="Photo de profil">
+                </div>
+                <div class="about-text animate-fadeInUp">
+                    <h3>Développeur Web / Cybersecurié Passionné</h3>
+                    <p>Des émissions comme Scorpion, Hawaii Five-0 et MacGyver ont éveillé ma passion pour la cybersécurité. J'étais fasciné par les scènes où les personnages piratent les bases de données gouvernementales en quelques clics. Cela semblait si facile que je voulais comprendre le « pourquoi » et le « comment » derrière cela. Cette curiosité m'a amené à quitter le Cameroun et à m'installer en France pour étudier dans ce domaine et approfondir ma compréhension.
+  
+                    </p>
+                    <p>Je m'efforce de combiner un design esthétique avec une fonctionnalité robuste pour créer des produits numériques qui non seulement sont beaux à regarder, mais aussi agréables à utiliser.</p>
+                    <div class="skills">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">UI/UX</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cv" id="cv">
+        <div class="container">
+            <h2 class="section-title">Mon CV</h2>
+            <div class="cv-content animate-fadeInUp">
+                <div class="cv-download">
+                    <p>Téléchargez mon CV pour en savoir plus sur mon parcours, mes compétences et mes expériences.</p>
+                    <a href="HERMAN Kouogang KOUAM CV.pdf" download class="btn btn-primary">Télécharger mon CV</a>
+                </div>   
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Mes Projets</h2>
+            <div class="projects-grid">
+                <div class="project-card animate-fadeInUp">
+                    <img src="project.png" alt="Projet 1" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">DIZ </h3>
+                        <p class="project-description">Une plateforme de streaming musical JPOP/JAZZ/RAP une immersion complete et intuitive </p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML/CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://diz-1bd86.firebaseapp.com/" class="project-link">Voir le site</a>
+                         
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card animate-fadeInUp">
+                    <img src="project2.png" alt="Projet 2" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">INSTINCT</h3>
+                        <p class="project-description">Site Vitrine pour Restaurant avec menu interactif, réservations en ligne et Menus</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML/CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">PHP</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://instinct-seven.vercel.app/" class="project-link">Voir le site</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="project-card animate-fadeInUp">
+                    <img src="project3.png" alt="Projet 3" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Convertisseurs de Devises</h3>
+                        <p class="project-description">Projet de cours mettant en avant nos competences en JavaScript.Site web de conversions de devises simples et intuitifs</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML/CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                        
+                        </div>
+                        <div class="project-links">
+                            <a href="https://convertisseur-de-devises.vercel.app/" class="project-link">Voir le site</a>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Me Contacter</h2>
+            <div class="contact-container">
+                <div class="contact-info animate-fadeInUp">
+                    <h3 class="contact-title">Travaillons ensemble</h3>
+                    <p class="contact-subtitle">Vous avez un projet en tête ,un stage ,une alternance ou vous souhaitez simplement me contacter ? N'hésitez pas à m'envoyer un message et je vous répondrai dans les plus brefs délais.</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-text">
+                            <strong>Email</strong><br>
+                            hermankouam44@gmail.com
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-text">
+                            <strong>Téléphone</strong><br>
+                            +33 6 23 80 68 81
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-text">
+                            <strong>Localisation</strong><br>
+                            lille 59800, France
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form animate-fadeInUp">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Nom</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Votre nom" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="Votre email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Sujet</label>
+                        <input type="text" id="subject" name="subject" class="form-input" placeholder="Sujet de votre message" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-textarea" placeholder="Votre message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="form-button">Envoyer le Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">Mon Portfolio</div>
+            <p class="footer-text">Développeur Web passionné créant des expériences numériques intuitives et attrayantes pour le web moderne.</p>
+            
+            <div class="social-links">
+        
+                
+                <a href="https://www.instagram.com/kasho.llds?igsh=MXFkMzE3eWU3MHhsZQ%3D%3D&utm_source=qr" class="social-link">IG</a>
+                <a href="https://www.linkedin.com/in/herman-kouogang-kouam/" class="social-link">LI</a>
+                <a href="https://github.com/Herman-bipbop" class="social-link">GH</a>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Mon Portfolio.Herman.KOUOGANG. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
